@@ -16,3 +16,6 @@
 
 PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/twrp_lisa.mk
+     
+COMMON_LUNCH_CHOICES := \
+    twrp_lisa-eng     
