@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="lisa"
+FDEVICE="renoir"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -38,8 +38,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export TW_DEFAULT_LANGUAGE="en"
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
-	export TARGET_DEVICE_ALT="lisa,lisa_in,lisa_cn,lisa_global"
-	export OF_TARGET_DEVICES="lisa_in,lisa_cn,lisa_global"
+	export TARGET_DEVICE_ALT="renoir,renoir_jp,renoir_cn,renoir_global"
+	export OF_TARGET_DEVICES="renoir_jp,renoir_cn,renoir_global,renoir"
 	export OF_VIRTUAL_AB_DEVICE=1
 	export OF_AB_DEVICE=1
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
@@ -72,20 +72,27 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
     export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
     export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
+	export OF_DISABLE_MIUI_SPECIFIC_FEATURES=0
 
 	# Screen Settings
 	export OF_SCREEN_H=2400
-	export OF_STATUS_H=210
-	export OF_STATUS_INDENT_LEFT=48
+	export OF_STATUS_H=130
+	export OF_STATUS_INDENT_LEFT=160
 	export OF_STATUS_INDENT_RIGHT=48
 	export OF_CLOCK_POS=1
 	export OF_HIDE_NOTCH=1
 	export OF_ALLOW_DISABLE_NAVBAR=0
+
+	# Vibration
+	export TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF=true
+
+	# Magisk
+	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk-25.2.zip
 	
-	# R11.1 Settings
-	export FOX_VERSION="R11.1"
-	export OF_MAINTAINER="Rahul"
-	export FOX_BUILD_TYPE="Beta"
+	# R12.1 Settings
+	export FOX_VERSION="R12.1"
+	export OF_MAINTAINER="Iacob"
+	export FOX_BUILD_TYPE="A12"
 
 	# Run a Process after Formatting Data to Work-Around MTP Issues
 	export OF_RUN_POST_FORMAT_PROCESS=1

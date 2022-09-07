@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/lisa
+DEVICE_PATH := device/xiaomi/renoir
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -31,9 +31,6 @@ TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := lisa,lisa_in,lisa_cn,lisa_global
 
 # A/B
 AB_OTA_UPDATER := true
@@ -80,7 +77,7 @@ BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000
 NEED_KERNEL_MODULE_RECOVERY := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_MKBOOTIMG_ARGS += --dtb $(DEVICE_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -93,7 +90,7 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor vendor_dlkm
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # (BOARD_SUPER_PARTITION_SIZE - 4MB)
 
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4

@@ -1,48 +1,26 @@
-# Device Tree for Xiaomi 11 Lite NE
+Copyright (C) 2021 The LineageOS Project
 
-The Xiaomi 11 Lite NE (codenamed "lisa") is an upper-mid-range smartphone from Xiaomi.
+Device configuration for Xiaomi Mi 11 Lite 5G
+=========================================
 
-It was announced in September 2021 and released in October 2021.
+The Xiaomi Mi 11 Lite 5G (codenamed _"renoir"_) is a mid-range smartphone from Xiaomi.
 
-It is also known as Xiaomi 11 Lite 5G NE (globally) and Mi 11 LE (China).
+It was released in April 2021.
 
 ## Device specifications
 
-| Feature     | Specification                                                                             |
-| :-----------|:------------------------------------------------------------------------------------------|
-| Chipset     | Qualcomm SM7325 Snapdragon 778G 5G (6 nm)                                                 |
-| CPU         | Octa-core (1x2.4 GHz Kryo 670 Prime, 3x2.4 GHz Kryo 670 Gold & 4x1.8 GHz Kryo 670 Silver) |
-| GPU         | Adreno 642L                                                                               |
-| Memory      | 6/8 GB LPDDR4X RAM                                                                        |
-| Shipped OS  | Android 11.0 (MIUI 12.5)                                                                  |
-| Storage     | 128/256 GB (UFS 2.2)                                                                      |
-| SIM         | Hybrid Dual SIM (Nano-SIM, dual stand-by)                                                 |
-| MicroSD     | Up to 512 GB                                                                              |
-| Battery     | 4250 mAh Li-Po (non-removable), 33W fast charge                                           |
-| Dimensions  | 160.5 x 75.7 x 6.8 mm (6.32 x 2.98 x 0.27 in)                                             |
-| Display     | 6.55", 1080x2400 pixels, AMOLED, 10 bit, Dolby Vision, HDR10+, 90Hz                       |
-| Camera      | 64 MP (main), 8 MP (ultrawide), 5 MP (telemacro), 20 MP (front)                           |
-| Fingerprint | Side-mounted (FPC)                                                                        |
-| Sensors     | Accelerometer, Gyro, Proximity (virtual), Compass, Pickup                                 |
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | Kryo 670, Up to 2.4 GHz, Octa-core CPU
+Chipset | Qualcomm Snapdragon 780G 5G (SM7350-AB)
+GPU     | Adreno 642
+Memory  | 6/8 GB, LPDDR4X
+Storage | 128 GB, UFS 2.2
+Shipped Android Version | 11
+Battery | Non-removable 4250 mAh
+Display | 2400 x 1080 pixels, 6.55 inches
+Camera  | 64 MP main, 8 MP ultra-wide angle, 5 MP telemacro, 29 MP front
 
 ## Device picture
 
-![Xiaomi 11 Lite NE](https://i02.appmifile.com/984_operator_sg/02/11/2021/fc9dd7c4de97018c179efc57616cd85b.png)
-
-Copyright (C) 2022 The OrangeFox Recovery Project
-
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- */
-
+![Xiaomi Mi 11 Lite 5G](https://i01.appmifile.com/webfile/globalimg/products/pc/mi-11-lite-5g/specs01.png "Xiaomi Mi 11 Lite 5G")

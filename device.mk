@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-LOCAL_PATH := device/xiaomi/lisa
+LOCAL_PATH := device/xiaomi/renoir
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -108,7 +108,7 @@ PLATFORM_VERSION := 127
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
-TW_LOAD_VENDOR_MODULES := "goodix_core.ko adsp_loader_dlkm.ko qti_battery_charger_main.ko"
+TW_LOAD_VENDOR_MODULES := "goodix_core.ko adsp_loader_dlkm.ko qti_battery_charger_main.ko focaltech_touch.ko"
 
 TARGET_RECOVERY_DEVICE_MODULES += \
     libdisplayconfig.qti \
